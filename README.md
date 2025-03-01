@@ -18,3 +18,23 @@ Generate a voter ID with at least 8 characters that satisfies a specific regex p
 The Voter ID generation script helps you generate the IDs instantly
 
 The Verification script is a first-instance test for the voter IDs, to give you a prima facie impression over whether fraud has been conducted. 
+
+# My Process
+## Step 1: Clean Data Set
+Obtain voter list from the secretary with first name, last name and email and/or college
+Cleaned for any duplicates 
+
+## Step 2: Generate unique links
+Upload the csv into Qualtrics contact list, and generate the unique links on Qualtrics
+Download the csv
+
+## Step 3: Generate Unique Voter IDs for each person 
+Manually clean the csv with voter links based on the info you want to keep
+Then, you put it through the python script to generate unique voter IDs for each person
+Save the csv and send to the secretary
+
+## Step 4: Litmus Verification
+Download the responses -- i.e. the voter IDs, to check for any fradulent vote
+More a litmus test than anything since some votes that use exisiting IDs will go unnoticed
+
+
