@@ -28,6 +28,6 @@ def append_voter_ids(input_csv, output_csv):
     print(f"Updated CSV file with voter IDs saved as {output_csv}")
 
 if __name__ == '__main__':
-    input_file = 'COntactListOUMSSAElectorate.csv'  # Change this to the actual input file
-    output_file = 'output_with_voter_ids.csv'  # Output file name
+    input_file = 'FinalVoterRollCall.csv'  # Change this to the actual input file
+    output_file = 'FinalVoterRollCall_with_ids.csv'  # Output file name
     append_voter_ids(input_file, output_file)
